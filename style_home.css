@@ -48,8 +48,7 @@ body{
     min-height: 100%;
     display: block;
   }
-  
-  /* Add some content at the bottom of the video/page */
+
   .content {
     justify-content: center;
     display: inline-block;
@@ -58,3 +57,11 @@ body{
     bottom: 27em;
   }
   
+/* The best seller section */
+.bestseller{
+    display: flex;
+}
+.best{
+    height: 500px;
+    position: relative;
+}
