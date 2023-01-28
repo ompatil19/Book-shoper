@@ -1,0 +1,60 @@
+/* genral formating */
+body{
+    background-color: black;
+}
+*{
+    text-decoration: none;
+    color: aliceblue;
+}
+/* navbar styling */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: black;
+    position: fixed;
+}
+.header .navbar ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 2.5em;
+  }
+
+.header .navbar ul li{
+    margin:0em 0.5em;
+}
+.header .navbar ul li :hover{
+    background-color: aqua;
+}
+
+
+
+
+/* start of carousel */
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    display: inline-block;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    display: block;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    justify-content: center;
+    display: inline-block;
+    position: relative;
+    left: 36em;
+    bottom: 27em;
+  }
+  
