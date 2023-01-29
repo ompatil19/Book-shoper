@@ -7,15 +7,20 @@
     <title>BOOK SHOP</title>
 </head>
 <link rel="stylesheet" href="style_home.css">
+<link rel="stylesheet" href="author.css">
 <body>
     <header class="header">
         <a href="#" class="logo"><i></i> Book store</a>
         <nav class="navbar">
             <ul>
                 <li><a href="default.asp"><img src="" alt=""></a></li>
-                <li><a href="news.asp">GENERE</a></li>
+                <li><a href="news.asp">GENRE</a></li>
                 <li><a href="contact.asp">BLOG</a></li>
-                <li><input type="text" name="" id="search" placeholder="search"></li>
+                <!-- <li><input type="text" name="" id="search" placeholder="search"></li> -->
+                <li><div class="group">
+                    <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+                    <input placeholder="Search" type="search" class="input">
+                  </div></li>
                 <li>Login</li>
                 <li><a href="#"><img src="cart.jpg" alt="" class="cart"></a></li>
             </ul>
@@ -30,41 +35,92 @@
         </div>
 
     <!-- starting of the bestsellers section -->
-    <h1>BESTSELLER</h1>
+    <h1>B E S T S E L L E R</h1>
     <section class="bestseller">
-        <img src="best.jpg" alt="" class="best">
+        <img src="bestseller.jpg" alt="" class="best">
         <div class="best-content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, fugit!</p>
-            <h1>THE THEORY OF EVERTHING</h1>
-            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero culpa labore esse explicabo illo accusamus inventore minima commodi id ducimus non magni incidunt numquam cum, ab veritatis odio fugiat earum velit minus distinctio amet maiores quas. Tenetur, quisquam quo.</h4>
+            <p>what if you had the chance to go to the library and see for yourself? Would any of these other lives truly be better?</p>
+            <h1>THE MIDNIGHT LIBRARY</h1>
+            <h4>Between life and death there is a library, and within that library, the shelves go on forever. Every book provides a chance to try another life you could have lived. To see how things would be if you had made other choices . . . Would you have done anything different, if you had the chance to undo your regrets? A novel about all the choices that go into a life well lived.</h4>
             <img src="" alt="">
-            <p></p>
-            <input type="button" value="BUY NOW">
-            <input type="button" value="READ MORE">
+            <p>Matt Haig - Author</p>
+            <input type="button" value="READ MORE" class="best-button">
+            <input type="button" value="BUY NOW" class="best-button">
             
         </div>
     </section>
 
+    <!-- Start of normal books -->
+    <h2>NEW RELEASES</h2>
+    <section class="flex normal">
+        <div class="content-normal text-right">
+            <p class="title"> Really Good,Actually</p>
+            <p class="author">Monica Heisey</p>
+            <p class="Description">A hilarious and painfully relatable debut novel about one woman's messy search for joy and meaning in the wake of an unexpected breakup, from comedian, essayist, and award-winning screenwriter Monica Heisey</p>
+            <button class="best-button">READ MORE</button>
+            <button class="best-button">BUY NOW</button>
+        </div>
+        <img src="normal-1.jpg" alt="" class="normal-img">
+    </section>
+    <section class="flex normal">
+        <img src="normal-2.jpg" alt="" class="normal-img1">
+        <div class="content-normal text-left">
+            <p class="title"> SPARE</p>
+            <p class="author">Prince Harry</p>
+            <p class="Description">It was one of the most searing images of the twentieth century: two young boys, two princes, walking behind their mother’s coffin as the world watched in sorrow—and horror. As Princess Diana was laid to rest, billions wondered what Prince William and Prince Harry must be thinking and feeling—and how their lives would play out from that point on.</p>
+            <button class="normal-button">READ MORE</button>
+            <button class="normal-button">BUY NOW</button>
+        </div>
+    </section>
+    <section class="flex normal">
+        <div class="content-normal text-right">
+            <p class="title"> The Deluge</p>
+            <p class="author">Stephen Markley</p>
+            <p class="Description">From the bestselling author of Ohio, a masterful American epic charting a near future approaching collapse and a nascent but strengthening solidarity.</p>
+            <button class="best-button">READ MORE</button>
+            <button class="best-button">BUY NOW</button>
+        </div>
+        <img src="normal-3.jpg" alt="" class="normal-img">
+    </section>
+    <section class="flex normal">
+        <img src="normal-4.jpg" alt="" class="normal-img1">
+        <div class="content-normal text-left">
+            <p class="title"> Pandora</p>
+            <p class="author">Susan Stokes-Chapman</p>
+            <p class="Description">Steeped in mystery and rich in imagination, an exhilarating historical novel set in Georgian London where the discovery of a mysterious ancient Greek vase sets in motion conspiracies, revelations, and romance.</p>
+            <button class="normal-button">READ MORE</button>
+            <button class="normal-button">BUY NOW</button>
+        </div>
+    </section>
+    <section class="about-author flex">
+        <img src="author.jpeg" alt="" class="about-author-img">
+        <div class="about-author-content">
+            <p class="the-author"> The Author</p>
+            <p class="author-name">Colleen Hoover</p>
+            <p class="style-author">Style:Art,Fiction</p>
+            <span class="author-cont">Colleen Hoover is the #1 New York Times bestselling author of twenty two novels and novellas. Hoover's novels fall into the New Adult and Young Adult contemporary romance categories, as well as psychological thriller. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                Colleen Hoover is published by Montlake Romance, Grand Central Publishing and Atria Books. Colleen also has several indie titles, including Heart Bones.</span>
+        </div>
+    </section>
+    <h1>ABOUT US</h1>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
         <!-- script tags -->
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
