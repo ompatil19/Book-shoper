@@ -5,6 +5,7 @@ body{
 *{
     text-decoration: none;
     color: aliceblue;
+    box-sizing: border-box;
 }
 /* navbar styling */
 .header{
@@ -64,4 +65,14 @@ body{
 .best{
     height: 500px;
     position: relative;
+}
+.cart{
+    height: 33px;
+    width: 33px;
+    align-items: center;
+    justify-content: center;
+}
+.best-content{
+    margin-left: 3em;
+    text-align: center;
 }
