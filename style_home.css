@@ -6,6 +6,7 @@ body{
     text-decoration: none;
     color: aliceblue;
     box-sizing: border-box;
+    transition: all .2s linear;
 }
 .flex{
     display: flex;
@@ -16,7 +17,54 @@ body{
 .text-left{
     text-align: left;
 }
+button {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #67daef;
+    /* background: rgb(192, 191, 164); */
+    /* background: #e8e8e8; */
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    margin: 2em;
+   }
+   
+   button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   button:hover {
+    color: #e8e8e8;
+   }
+   
+   button:hover::before {
+    width: 100%;
+   }
+
+
 /* navbar styling */
+.logo{
+    font-size: 1.9em;
+    font-family: 'Alexandria';
+}
 .header{
     display: flex;
     align-items: center;
@@ -35,11 +83,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-right: 2.5em;
+    /* margin-right: 2.5em; */
   }
 
 .header .navbar ul li{
-    margin:0em 0.5em;
+    margin:0em 0.6em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
 }
 /* .header .navbar ul li :hover{
     background-color: aqua;
@@ -107,14 +157,22 @@ body{
   .content {
     justify-content: center;
     display: inline-block;
-    position: relative;
+    position: absolute;
     left: 36em;
     bottom: 27em;
+    font-family: 'Lato', sans-serif;
   }
   
 /* The best seller section */
-.bestseller{
-    display: flex;
+.best-head{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 3.3em;
+    margin-left: 1em;
+    letter-spacing: 0.1em;
+}
+.small-desc{
+    font-family: 'Alata', sans-serif;
+    font-size: 1.1em;
 }
 .best{
     height: 515px;
@@ -128,12 +186,21 @@ body{
     justify-content: center;
 }
 .best-content{
-    margin: 5em 8em;
+    margin: 2em 8em;
     text-align: center;
 }
 .best-content h1{
-    font-size: 2rem;
+    font-size: 2.8rem;
     padding: 0em 4em;
+    padding: 0px;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.4em ;
+}
+.best-content h4{
+    font-family: 'Lora', serif;
+    line-height: 2em;
 }
 .best-button{
     background-color: brown;
@@ -141,6 +208,11 @@ body{
     border-radius: 20px;
     width: 150px;
     margin: 2em;
+}
+.best-author{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    margin: 0;
 }
 
 /* start of normal books */
@@ -158,12 +230,17 @@ body{
 }
 .title{
     font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 .author{
     font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 .Description{
-    font-size: 1.5em;
+    font-size: 1.3em;
+    font-family: 'Lora', serif;
 }
 .normal-img1{
     height: 25em;
@@ -199,16 +276,180 @@ body{
     top: 9em;
     width: 30em;
     height: 25em;
+    /* background-image: url("kid-read.jpg"); */
     background-color: #0d0c22;
     padding: 2em 1em;
 }
-/* .the-author{
-    font-size: 0.8rem;
-} */
+.the-author{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
 .author-name{
     font-size: 2em;
     margin: 0;
 }
 .author-cont{
     font-size: 1.2em;
+    font-family: 'Hind Vadodara', sans-serif;
 }
+
+
+
+/* start of about us section */
+.about{
+    margin: 2.2em 0em;
+    /* position: absolute; */
+    /* bottom: 3em; */
+}
+.card {
+    width: 190px;
+    height: 254px;
+    background: #f5f5f5;
+    padding: 2rem 1.5rem;
+    -webkit-transition: -webkit-box-shadow .3s ease, -webkit-transform .2s ease;
+    transition: -webkit-box-shadow .3s ease, -webkit-transform .2s ease;
+    transition: box-shadow .3s ease, transform .2s ease;
+    transition: box-shadow .3s ease, transform .2s ease, -webkit-box-shadow .3s ease, -webkit-transform .2s ease;
+    border-radius: 10px;
+   }
+   
+   .card-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: opacity .2s ease, -webkit-transform .2s ease;
+    transition: opacity .2s ease, -webkit-transform .2s ease;
+    transition: transform .2s ease, opacity .2s ease;
+    transition: transform .2s ease, opacity .2s ease, -webkit-transform .2s ease;
+   }
+   
+   /*Image*/
+   .card-avatar {
+    --size: 60px;
+    /* background-image: url("om.jpeg"); */
+    /* background: webkit-gradient(linear, left bottom, left top, from(#f1e1c1), to(#fcbc97));
+    background: linear-gradient(to top, #f1e1c1 0%, #fcbc97 100%); */
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform .2s ease;
+    transition: -webkit-transform .2s ease;
+    transition: transform .2s ease;
+    transition: transform .2s ease, -webkit-transform .2s ease;
+    margin-bottom: 1rem;
+    object-fit: cover;
+   }
+   
+   
+   /*Card footer*/
+   .card-social {
+    -webkit-transform: translateY(200%);
+        -ms-transform: translateY(200%);
+            transform: translateY(200%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    width: 100%;
+    opacity: 0;
+    padding: 0;
+    -webkit-transition: opacity .2s ease, -webkit-transform .2s ease;
+    transition: opacity .2s ease, -webkit-transform .2s ease;
+    transition: transform .2s ease, opacity .2s ease;
+    transition: transform .2s ease, opacity .2s ease, -webkit-transform .2s ease;
+   }
+   
+   .card-social__item {
+    list-style: none;
+   }
+   
+   .card-social__item svg {
+    display: block;
+    height: 18px;
+    width: 18px;
+    fill: #515F65;
+    cursor: pointer;
+    -webkit-transition: fill 0.2s ease ,-webkit-transform 0.2s ease;
+    transition: fill 0.2s ease ,-webkit-transform 0.2s ease;
+    transition: fill 0.2s ease ,transform 0.2s ease;
+    transition: fill 0.2s ease ,transform 0.2s ease ,-webkit-transform 0.2s ease;
+   }
+   
+   /*Text*/
+   .card-title {
+    color: #333;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 2rem;
+   }
+   
+   .card-subtitle {
+    color: #859ba8;
+    font-size: 0.8em;
+   }
+   
+   /*Hover*/
+   .card:hover {
+    -webkit-box-shadow: 0 8px 50px #23232333;
+            box-shadow: 0 8px 50px #23232333;
+   }
+   
+   .card:hover .card-info {
+    -webkit-transform: translateY(-5%);
+        -ms-transform: translateY(-5%);
+            transform: translateY(-5%);
+   }
+   
+   .card:hover .card-social {
+    -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 1;
+   }
+   
+   .card-social__item svg:hover {
+    fill: #232323;
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+   }
+   
+   .card-avatar:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+   }
+   .cards-align{
+    margin: 6em 6em;
+    justify-content: space-around;
+   }
+
+
+
+   /* try */
+    /* .home {
+        min-height: 100vh;
+        width: 100vw;
+        
+    } */
+    .content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 23em;
+        left: 33em;
+    }
+    
+

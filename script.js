@@ -1,6 +1,7 @@
 let typed=new Typed( ".auto-input", {
-    strings: ["Welcome to the books store","Read all the books you want","Buy share read"],
+    strings: ["Welcome To Fictionary","Welcome To Fictionary","Turn The Page, Start a Journey","Escape Reality, One Book At a Time"],
     typeSpeed :50, 
     backSpeed:50, 
     loop:true
 })
+
