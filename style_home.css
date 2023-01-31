@@ -449,7 +449,45 @@ button {
         justify-content: center;
         position: absolute;
         top: 23em;
-        left: 33em;
+        left: 34em;
     }
-    
-
+    @media only screen and (max-width: 1280px) {
+        /* making bestseller responsice */
+        .bestseller{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .best{
+            margin: 0;
+        }
+        .normal{
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+        }
+        .content-normal{
+            text-align: center;
+        }
+        .normal-img{
+            margin: 0;
+        }
+        .normal-img1{
+            margin: 0;
+        }
+        .werp{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        /* .about-author{
+            flex-wrap: wrap;
+        } */
+        .cards-align{
+            flex-direction: column;
+            /* margin-top: 1.2em; */
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .card{
+            margin-top:1.2em ;
+        }
+      }
