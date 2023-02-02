@@ -149,8 +149,9 @@ button {
     display: inline-block;
     right: 0;
     bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
+    /* min-height: 100%; */
+    height: auto;
     display: block;
   }
 
@@ -451,7 +452,7 @@ button {
         top: 23em;
         left: 34em;
     }
-    @media only screen and (max-width: 1280px) {
+    @media only screen and (max-width: 1075px) {
         /* making bestseller responsice */
         .bestseller{
             flex-wrap: wrap;
