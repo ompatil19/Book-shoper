@@ -5,3 +5,6 @@ let typed=new Typed( ".auto-input", {
     loop:true
 })
 
+let t=document.getElementsByClassName("content")
+
+console.log(t)

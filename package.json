@@ -1,0 +1,23 @@
+{
+  "name": "fictionary",
+  "version": "1.0.0",
+  "description": "this is a book shopping website ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ompatil19/Book-shoper.git"
+  },
+  "author": "om",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ompatil19/Book-shoper/issues"
+  },
+  "homepage": "https://github.com/ompatil19/Book-shoper#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
