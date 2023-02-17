@@ -1,14 +1,14 @@
 .contact {
     background-color: #008080;
     color: white;
-    height: 70vh;
+    /* height: 70vh; */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     padding: 5em
 }
 
 .details {
-    padding-top: 8em;
+    padding-top: 4em;
     padding-left: 1em;
 }
 
@@ -28,10 +28,13 @@
 .social {
     padding-left: 1em;
 } */
-
+/* .social{
+    border: 2px solid white;
+} */
 
 .instagram {
-    height: 1.7em;
+    height: 4em;
     padding: .5em .5em 2em .5em;
-
+    /* z-index: 1; */
+    /* visibility: visible; */
 }
