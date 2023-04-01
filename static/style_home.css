@@ -1,21 +1,32 @@
 /* genral formating */
-body{
+body {
     background-color: black;
 }
-*{
+
+* {
     text-decoration: none;
     color: aliceblue;
     box-sizing: border-box;
     transition: all .2s linear;
 }
-.flex{
+
+.block {
+    display: block;
+}
+
+.flex {
     display: flex;
 }
-.text-right{
+
+.text-right {
     text-align: right;
 }
-.text-left{
+
+.text-left {
     text-align: left;
+}
+.pointer{
+    cursor: pointer;
 }
 button {
     padding: 15px 25px;
@@ -29,14 +40,14 @@ button {
     position: relative;
     font-weight: 1000;
     font-size: 17px;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
     transition: all 250ms;
     overflow: hidden;
     margin: 2em;
-   }
-   
-   button::before {
+}
+
+button::before {
     content: "";
     position: absolute;
     top: 0;
@@ -46,8 +57,8 @@ button {
     border-radius: 15px;
     background-color: #212121;
     z-index: -1;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
     transition: all 250ms
 }
 
@@ -61,15 +72,20 @@ button:hover::before {
 
 
 /* navbar styling */
-.logo{
+.logo {
     font-size: 1.9em;
     font-family: 'Alexandria';
 }
-.header{
+
+#navres {
+    width: 100%;
+}
+
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    /* width: 100%; */
     padding: 0.1rem 2rem;
     position: fixed;
     top: 0;
@@ -78,7 +94,8 @@ button:hover::before {
     background-color: black;
     position: fixed;
 }
-.header .navbar ul{
+
+.header .navbar ul {
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -86,43 +103,46 @@ button:hover::before {
     /* margin-right: 2.5em; */
 }
 
-.header .navbar ul li{
-    margin:0em 0.6em;
+.header .navbar ul li {
+    margin: 0em 0.6em;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
 }
+
 .input {
- width: 100%;
- height: 40px;
- line-height: 28px;
- padding: 0 1rem;
- padding-left: 2.5rem;
- border: 2px solid transparent;
- border-radius: 8px;
- outline: none;
- background-color: #f3f3f4;
- color: #0d0c22;
- transition: .3s ease;
+    width: 100%;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
 }
 
 .input::placeholder {
- color: #9e9ea7;
+    color: #9e9ea7;
 }
 
-.input:focus, input:hover {
- outline: none;
- border-color: rgba(234,76,137,0.4);
- background-color: #fff;
- box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+.input:focus,
+input:hover {
+    outline: none;
+    border-color: rgba(234, 76, 137, 0.4);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
 }
 
 .icon {
- position: absolute;
- left: 1rem;
- fill: #9e9ea7;
- width: 1rem;
- height: 1rem;
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
 }
+
 /* .header .navbar ul li :hover{
     background-color: aqua;
 } */
@@ -133,17 +153,16 @@ button:hover::before {
     align-items: center;
     position: relative;
     max-width: 190px;
-   }
-   
-   
-   
-   
-   
-   
-   
+}
 
 
-/* start of carousel */
+
+
+
+
+
+
+
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
     display: inline-block;
@@ -153,101 +172,116 @@ button:hover::before {
     /* min-height: 100%; */
     height: auto;
     display: block;
-  }
+}
 
-  .content {
+.content {
     justify-content: center;
     display: inline-block;
     position: absolute;
     left: 36em;
     bottom: 27em;
     font-family: 'Lato', sans-serif;
-  }
-  
+}
+
 /* The best seller section */
-.best-head{
+.best-head {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 3.3em;
     margin-left: 1em;
     letter-spacing: 0.1em;
 }
-.small-desc{
+
+.small-desc {
     font-family: 'Alata', sans-serif;
     font-size: 1.1em;
 }
-.best{
+
+.best {
     height: 515px;
     position: relative;
     margin-left: 10em;
 }
-.cart{
+
+.cart {
     height: 33px;
     width: 33px;
     align-items: center;
     justify-content: center;
 }
-.best-content{
+
+.best-content {
     margin: 2em 8em;
     text-align: center;
 }
-.best-content h1{
+
+.best-content h1 {
     font-size: 2.8rem;
     padding: 0em 4em;
     padding: 0px;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    letter-spacing: 0.4em ;
+    letter-spacing: 0.4em;
 }
-.best-content h4{
+
+.best-content h4 {
     font-family: 'Lora', serif;
     line-height: 2em;
 }
-.best-button{
+
+.best-button {
     background-color: brown;
     height: 3em;
     border-radius: 20px;
     width: 150px;
     margin: 2em;
 }
-.best-author{
+
+.best-author {
     font-family: 'Poppins', sans-serif;
     font-size: 2em;
     margin: 0;
 }
 
 /* start of normal books */
-.normal{
-    margin-top:2em;
+.normal {
+    margin-top: 2em;
     margin-bottom: 8em;
 }
-.normal-img{
+
+.normal-img {
     height: 25em;
     margin-right: 5em;
 }
-.content-normal{
+
+.content-normal {
     /* text-align: left; */
-    margin: 0em 4em ;
+    margin: 0em 4em;
 }
-.title{
+
+.title {
     font-size: 3em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 }
-.author{
+
+.author {
     font-size: 2em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 }
-.Description{
+
+.Description {
     font-size: 1.3em;
     font-family: 'Lora', serif;
 }
-.normal-img1{
+
+.normal-img1 {
     height: 25em;
     margin-left: 5em;
 }
-.normal-button{
+
+.normal-button {
     background-color: brown;
     height: 3em;
     border-radius: 20px;
@@ -257,18 +291,20 @@ button:hover::before {
 
 
 /* about author section   */
-.about-author{
+.about-author {
     background-color: antiquewhite;
     height: 57vh;
 }
-.about-author-img{
+
+.about-author-img {
     height: 25em;
     border: 2px solid black;
     bottom: 3rem;
     position: relative;
     left: 16em;
 }
-.about-author-content{
+
+.about-author-content {
     border: 2px solid rgb(255, 255, 255);
     color: #fff;
     z-index: 2;
@@ -281,15 +317,18 @@ button:hover::before {
     background-color: #0d0c22;
     padding: 2em 1em;
 }
-.the-author{
+
+.the-author {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
-.author-name{
+
+.author-name {
     font-size: 2em;
     margin: 0;
 }
-.author-cont{
+
+.author-cont {
     font-size: 1.2em;
     font-family: 'Hind Vadodara', sans-serif;
 }
@@ -297,11 +336,12 @@ button:hover::before {
 
 
 /* start of about us section */
-.about{
+.about {
     margin: 2.2em 0em;
     /* position: absolute; */
     /* bottom: 3em; */
 }
+
 .card {
     width: 190px;
     height: 254px;
@@ -312,30 +352,30 @@ button:hover::before {
     transition: box-shadow .3s ease, transform .2s ease;
     transition: box-shadow .3s ease, transform .2s ease, -webkit-box-shadow .3s ease, -webkit-transform .2s ease;
     border-radius: 10px;
-   }
-   
-   .card-info {
+}
+
+.card-info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-transition: opacity .2s ease, -webkit-transform .2s ease;
     transition: opacity .2s ease, -webkit-transform .2s ease;
     transition: transform .2s ease, opacity .2s ease;
     transition: transform .2s ease, opacity .2s ease, -webkit-transform .2s ease;
-   }
-   
-   /*Image*/
-   .card-avatar {
+}
+
+/*Image*/
+.card-avatar {
     --size: 60px;
     /* background-image: url("om.jpeg"); */
     /* background: webkit-gradient(linear, left bottom, left top, from(#f1e1c1), to(#fcbc97));
@@ -349,14 +389,14 @@ button:hover::before {
     transition: transform .2s ease, -webkit-transform .2s ease;
     margin-bottom: 1rem;
     object-fit: cover;
-   }
-   
-   
-   /*Card footer*/
-   .card-social {
+}
+
+
+/*Card footer*/
+.card-social {
     -webkit-transform: translateY(200%);
-        -ms-transform: translateY(200%);
-            transform: translateY(200%);
+    -ms-transform: translateY(200%);
+    transform: translateY(200%);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -369,129 +409,211 @@ button:hover::before {
     transition: opacity .2s ease, -webkit-transform .2s ease;
     transition: transform .2s ease, opacity .2s ease;
     transition: transform .2s ease, opacity .2s ease, -webkit-transform .2s ease;
-   }
-   
-   .card-social__item {
+}
+
+.card-social__item {
     list-style: none;
-   }
-   
-   .card-social__item svg {
+}
+
+.card-social__item svg {
     display: block;
     height: 18px;
     width: 18px;
     fill: #515F65;
     cursor: pointer;
-    -webkit-transition: fill 0.2s ease ,-webkit-transform 0.2s ease;
-    transition: fill 0.2s ease ,-webkit-transform 0.2s ease;
-    transition: fill 0.2s ease ,transform 0.2s ease;
-    transition: fill 0.2s ease ,transform 0.2s ease ,-webkit-transform 0.2s ease;
-   }
-   
-   /*Text*/
-   .card-title {
+    -webkit-transition: fill 0.2s ease, -webkit-transform 0.2s ease;
+    transition: fill 0.2s ease, -webkit-transform 0.2s ease;
+    transition: fill 0.2s ease, transform 0.2s ease;
+    transition: fill 0.2s ease, transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+/*Text*/
+.card-title {
     color: #333;
     font-size: 1.5em;
     font-weight: 600;
     line-height: 2rem;
-   }
-   
-   .card-subtitle {
+}
+
+.card-subtitle {
     color: #859ba8;
     font-size: 0.8em;
-   }
-   
-   /*Hover*/
-   .card:hover {
+}
+
+/*Hover*/
+.card:hover {
     -webkit-box-shadow: 0 8px 50px #23232333;
-            box-shadow: 0 8px 50px #23232333;
-   }
-   
-   .card:hover .card-info {
+    box-shadow: 0 8px 50px #23232333;
+}
+
+.card:hover .card-info {
     -webkit-transform: translateY(-5%);
-        -ms-transform: translateY(-5%);
-            transform: translateY(-5%);
-   }
-   
-   .card:hover .card-social {
+    -ms-transform: translateY(-5%);
+    transform: translateY(-5%);
+}
+
+.card:hover .card-social {
     -webkit-transform: translateY(100%);
-        -ms-transform: translateY(100%);
-            transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
     opacity: 1;
-   }
-   
-   .card-social__item svg:hover {
+}
+
+.card-social__item svg:hover {
     fill: #232323;
     -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-            transform: scale(1.1);
-   }
-   
-   .card-avatar:hover {
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.card-avatar:hover {
     -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-            transform: scale(1.1);
-   }
-   .cards-align{
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.cards-align {
     margin: 6em 6em;
     justify-content: space-around;
-   }
+}
 
 
 
-   /* try */
-    /* .home {
+/* try */
+/* .home {
         min-height: 100vh;
         width: 100vw;
         
     } */
-    .content{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 23em;
-        left: 34em;
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 23em;
+    left: 34em;
+}
+
+.aboutus-content {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    width: 80%;
+    font-family: 'Hind Vadodara', sans-serif;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 1.3em;
+}
+.details{
+    font-family: 'Hind Vadodara', sans-serif;
+}
+@media only screen and (max-width: 1075px) {
+
+    /* making navbar little responsive */
+    #navres {
+        font-size: 60%;
     }
-    @media only screen and (max-width: 1075px) {
-        /* making bestseller responsice */
-        .bestseller{
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .best{
-            margin: 0;
-        }
-        .normal{
-            flex-wrap: wrap-reverse;
-            justify-content: center;
-        }
-        .content-normal{
-            text-align: center;
-        }
-        .normal-img{
-            margin: 0;
-        }
-        .normal-img1{
-            margin: 0;
-        }
-        .werp{
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        /* .about-author{
+
+    .group {
+        display: none;
+    }
+
+    .content {
+        /* display: none; */
+        display: block;
+        margin: 6em auto;
+        position: none;
+        top: 0;
+        left: 0;
+    }
+
+    /* making bestseller responsice */
+    .bestseller {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .best-head {
+        margin-top: 5em;
+        display: block;
+        font-size: 2.7em;
+        margin-left: 0;
+    }
+
+    .best {
+        margin: 0;
+    }
+
+    .best-content h4 {
+        padding: 15px;
+    }
+
+    .normal {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    .content-normal {
+        text-align: center;
+    }
+
+    .normal-img {
+        margin: 0;
+    }
+
+    .normal-img1 {
+        margin: 0;
+    }
+
+    .werp {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* .about-author{
             flex-wrap: wrap;
         } */
-        .cards-align{
-            flex-direction: column;
-            /* margin-top: 1.2em; */
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .card{
-            margin-top:1.2em ;
-        }
-        *{
-            font-size: 50%;
-        }
-      }
+    .cards-align {
+        flex-direction: column;
+        /* margin-top: 1.2em; */
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin-top: 1.2em;
+    }
+
+    #myVideo {
+        display: none;
+
+    }
+
+    /* making best author responsive */
+    .about-author {
+        height: 70vh;
+        background-color: black;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .author-cont {
+        font-size: 0.9em;
+    }
+
+    .about-author-img {
+        height: 300px;
+        position: none;
+        bottom: 0;
+        left: 0;
+    }
+
+    .about-author-content {
+        position: none;
+        left: 0;
+        top: 0;
+        width: 353px;
+        height: 360px;
+        margin-top: 1em;
+    }
+}

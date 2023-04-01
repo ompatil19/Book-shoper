@@ -19,35 +19,35 @@
   rel="stylesheet">
 
 <body>
-  <header class="header">
-    <a rel="noopener noreferrer" href="#" class="logo"><i></i>Fictionary</a>
+    <header id="navres"class="header">
+      <a rel="noopener noreferrer" href="#" class="logo"><i></i>Fictionary</a>
     <nav class="navbar">
       <ul>
         <li><a target="_blank" rel="noopener noreferrer" href="default.asp"><img src="" alt=""></a></li>
         <li><a target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer"
-            href="news.asp">Genre</a></li>
-        <li><a target="_blank" rel="noopener noreferrer" href="contact.asp">Blog</a></li>
-        <!-- <li><input type="text" name="" id="search" placeholder="search"></li> -->
+            href="/genre">Genre</a></li>
+            <li><a target="_blank" href="/login"> Login </a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="/login">Sign Up</a></li>
+            <!-- <li><input type="text" name="" id="search" placeholder="search"></li> -->
+            <li><a target="_blank" rel="noopener noreferrer" class="pointer" onclick="scrollToSection()">About</a></li>
         <li>
           <div class="group">
             <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
               <g>
                 <path
-                  d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
-                </path>
-              </g>
-            </svg>
-            <input placeholder="Search" type="search" class="input">
-          </div>
-        </li>
-        <li><a target="_blank" href="/login#"> Login </a></li>
-        <li><a target="_blank" rel="noopener noreferrer" href="#"><img src="static/images/cartwhite__1_-removebg-preview.jpeg" alt=""
-              class="cart"></a></li>
-      </ul>
-    </nav>
-  </header>
-  <!-- Start of video -->
-  <!-- <div class="vid"> -->
+                d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+              </path>
+            </g>
+          </svg>
+          <input placeholder="Search" type="search" class="input">
+        </div>
+      </li>
+        <!-- <li><a target="_blank" rel="noopener noreferrer" href="#"><img src="static/images/cartwhite__1_-removebg-preview.jpeg" alt=""
+              class="cart"></a></li> -->
+            </ul>
+          </nav>
+        </header>
+        <!-- Start of video -->
 
   <video autoplay muted loop id="myVideo">
     <source src="/static/images/book-1.mp4" type="video/mp4">
@@ -70,10 +70,8 @@
         all the choices that go into a life well lived.</h4>
       <img src="" alt="">
       <p class="best-author">Matt Haig</p>
-      <button> READ MORE
-      </button>
-      <button> BUY NOW
-      </button>
+      <a href="/getBook/themidnightlibrary" target="_blank"><button> READ MORE</button></a>
+      <a href="/preordernow" target="_blank"><button> BUY NOW</button></a>
       <!-- <input type="button" value="BUY NOW" class="best-button"> -->
     </div>
   </section>
@@ -87,10 +85,8 @@
       <p class="Description">A hilarious and painfully relatable debut novel about one woman's messy search for joy and
         meaning in the wake of an unexpected breakup, from comedian, essayist, and award-winning screenwriter Monica
         Heisey</p>
-      <button> READ MORE
-      </button>
-      <button> BUY NOW
-      </button>
+        <a href="/getBook/reallygoodactually" target="_blank"><button> READ MORE</button></a>
+      <a href="/preordernow" target="_blank"><button> BUY NOW</button></a>
       <!-- <button class="best-button">READ MORE</button>
             <button class="best-button">BUY NOW</button> -->
     </div>
@@ -102,13 +98,11 @@
       <p class="title"> SPARE</p>
       <p class="author">Prince Harry</p>
       <p class="Description">It was one of the most searing images of the twentieth century: two young boys, two
-        princes, walking behind their mother’s coffin as the world watched in sorrow—and horror. As Princess Diana was
+        princes, walking behind their mother's coffin as the world watched in sorrow—and horror. As Princess Diana was
         laid to rest, billions wondered what Prince William and Prince Harry must be thinking and feeling—and how their
         lives would play out from that point on.</p>
-      <button> READ MORE
-      </button>
-      <button> BUY NOW
-      </button>
+        <a href="/getBook/spare" target="_blank"><button> READ MORE</button></a>
+        <a href="/preordernow" target="_blank"><button> BUY NOW</button></a>
       <!-- <button class="normal-button">READ MORE</button>
             <button class="normal-button">BUY NOW</button> -->
     </div>
@@ -119,10 +113,8 @@
       <p class="author">Stephen Markley</p>
       <p class="Description">From the bestselling author of Ohio, a masterful American epic charting a near future
         approaching collapse and a nascent but strengthening solidarity.</p>
-      <button> READ MORE
-      </button>
-      <button> BUY NOW
-      </button>
+        <a href="/getBook/thedeluge" target="_blank"><button> READ MORE</button></a>
+        <a href="/preordernow" target="_blank"><button> BUY NOW</button></a>
       <!-- <button class="best-button">READ MORE</button>
             <button class="best-button">BUY NOW</button> -->
     </div>
@@ -136,10 +128,8 @@
       <p class="Description">Steeped in mystery and rich in imagination, an exhilarating historical novel set in
         Georgian London where the discovery of a mysterious ancient Greek vase sets in motion conspiracies, revelations,
         and romance.</p>
-      <button> READ MORE
-      </button>
-      <button> BUY NOW
-      </button>
+        <a href="/getBook/pandora" target="_blank"><button> READ MORE</button></a>
+        <a href="/preordernow" target="_blank"><button> BUY NOW</button></a>
       <!-- <button class="normal-button">READ MORE</button>
             <button class="normal-button">BUY NOW</button> -->
     </div>
@@ -158,36 +148,38 @@
         several indie titles, including Heart Bones.</span>
     </div>
   </section>
-  <h1 class="about best-head">A B O U T &nbsp; U S</h1>
+  <h1 class="about best-head" id="aboutus">A B O U T &nbsp; U S</h1>
   <section class="cards-align flex">
     <div class="card">
       <div class="card-info">
-        <div class="card-avatar"></div>
+        <div class="card-avatar">
+          <img src="static/images/mohit2.jpg" alt="" class="card-avatar">
+        </div>
         <div class="card-title">Mohit</div>
         <div class="card-subtitle">Developer</div>
       </div>
       <ul class="card-social">
         <li class="card-social__item">
           <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/mohit.jaiin?igshid=ZDdkNTZiNTM="><svg
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+            d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z">
+          </path>
+        </svg></a>
+      </li>
+      <li class="card-social__item">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><svg
+          viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+          d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z">
+        </path>
+      </svg></a>
+    </li>
+    <li class="card-social__item">
+      <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mohit-jain-8a592a237"><svg
               viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path
-                d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z">
-              </path>
-            </svg></a>
-        </li>
-        <li class="card-social__item">
-          <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><svg
-              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z">
-              </path>
-            </svg></a>
-        </li>
-        <li class="card-social__item">
-          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mohit-jain-8a592a237"><svg
-              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z">
+              d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z">
               </path>
             </svg>
           </a>
@@ -205,35 +197,35 @@
       <ul class="card-social">
         <li class="card-social__item">
           <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/om.patil19/"><svg
-              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+            d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z">
+          </path>
+        </svg></a>
+      </li>
+      <li class="card-social__item">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path
-                d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z">
-              </path>
-            </svg></a>
-        </li>
-        <li class="card-social__item">
-          <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z">
-              </path>
-            </svg>
-          </a>
-        </li>
-        <li class="card-social__item">
+              d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z">
+            </path>
+          </svg>
+        </a>
+      </li>
+      <li class="card-social__item">
           <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/om-patil-7b26ba241/"><svg
-              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z">
-              </path>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="card">
-      <div class="card-info">
-        <div class="card-avatar"> 
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+            d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z">
+          </path>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</div>
+<div class="card">
+  <div class="card-info">
+    <div class="card-avatar"> 
           <img src="static/images/IMG_3058 (1).jpg" alt="" class="card-avatar">
         </div>
         <div class="card-title">Prakruthi</div>
@@ -242,35 +234,36 @@
       <ul class="card-social">
         <li class="card-social__item">
           <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/prakruthi_madhav/"><svg
-              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path
+            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
                 d="M14 9h3l-.375 3H14v9h-3.89v-9H8V9h2.11V6.984c0-1.312.327-2.304.984-2.976C11.75 3.336 12.844 3 14.375 3H17v3h-1.594c-.594 0-.976.094-1.148.281-.172.188-.258.5-.258.938V9z">
               </path>
             </svg></a>
-        </li>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-          <li class="card-social__item">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path
+          </li>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            <li class="card-social__item">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
                 d="M20.875 7.5v.563c0 3.28-1.18 6.257-3.54 8.93C14.978 19.663 11.845 21 7.938 21c-2.5 0-4.812-.687-6.937-2.063.5.063.86.094 1.078.094 2.094 0 3.969-.656 5.625-1.968a4.563 4.563 0 0 1-2.625-.915 4.294 4.294 0 0 1-1.594-2.226c.375.062.657.094.844.094.313 0 .719-.063 1.219-.188-1.031-.219-1.899-.742-2.602-1.57a4.32 4.32 0 0 1-1.054-2.883c.687.328 1.375.516 2.062.516C2.61 9.016 1.938 7.75 1.938 6.094c0-.782.203-1.531.609-2.25 2.406 2.969 5.515 4.547 9.328 4.734-.063-.219-.094-.562-.094-1.031 0-1.281.438-2.36 1.313-3.234C13.969 3.437 15.047 3 16.328 3s2.375.484 3.281 1.453c.938-.156 1.907-.531 2.907-1.125-.313 1.094-.985 1.938-2.016 2.531.969-.093 1.844-.328 2.625-.703-.563.875-1.312 1.656-2.25 2.344z">
               </path>
             </svg>
-        </a></li>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/prakruthi-madhav-0231b7233/">
-          <li class="card-social__item">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path
+          </a></li>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/prakruthi-madhav-0231b7233/">
+            <li class="card-social__item">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
                 d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z">
               </path>
             </svg>
-        </a>
+          </a>
         </li>
       </ul>
     </div>
   </section>
+  <p class="aboutus-content"><i>"Fictionary is a necessary and important resource for book lovers, providing access to a vast collection of books, convenience and flexibility in reading, community building features, and updates on new releases and trends. Whether you're a seasoned reader or just starting, Fictionary is the perfect platform to discover new books and authors and connect with fellow book lovers."</i></p>
   <div class="contact">
-
-    <h1>C O N T A C T <span class="tab"></span> U S</h1>
+    
+    <h1>C O N T A C T &nbsp; U S</h1>
     <div class="details">
       <div class="phone">
         <h3>PHONE:</h3>
@@ -315,8 +308,8 @@
 <footer>
 
   <div class="footer">
-    <h3 class="created">Created by Om, Mohit & Prakruthi | © all rights reserved. <span class="tab"></span>B.M.S.
-      College of Enginnering</h3> 
+    <h3 class="created">Created by Mohit, Om & Prakruthi | © all rights reserved. &nbsp; B.M.S.
+      College of Engineering. </h3> 
     </div>
   </footer>
   <!-- script tags -->

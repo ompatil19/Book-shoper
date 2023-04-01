@@ -1,9 +1,11 @@
 .footer {
-    background-color: rgb(161, 161, 161);
+    /* background-color: antiquewhite; */
 }
 
 .created {
     padding: 0 0 0 1em;
+    text-align: center;
+    /* color: black; */
 }
 
 .tab {
