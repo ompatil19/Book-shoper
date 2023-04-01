@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- <link rel="stylesheet" type="text/css" href="genre_style.css"> -->
         <link rel="stylesheet" href="/static/rm.css">
         <title><%= data.bookname%></title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <!-- <link
-            href="https://fonts.googleapis.com/css2?family=Alata&family=Albert+Sans:wght@800&family=Alexandria:wght@100;500&family=Antic+Didone&family=Cantarell&family=Fira+Sans+Condensed&family=Hind+Vadodara&family=Lato&family=Lora&family=Montserrat:wght@400;500;700;900&family=Playfair+Display:ital,wght@0,600;1,700&family=Poppins:wght@700&family=Signika:wght@300&family=Work+Sans:wght@400;500;700&display=swap"
-            rel="style.css"> -->
             <link rel="shortcut icon" href="/static/images/favicon.jpg" type="image/x-icon">
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Alata&family=Albert+Sans:ital,wght@0,100;0,500;0,700;1,800&family=Alexandria:wght@100;500;700&family=Antic+Didone&family=Cantarell&family=Fira+Sans+Condensed&family=Hind+Vadodara&family=Lato&family=Libre+Franklin:wght@800&family=Lora&family=Montserrat:wght@400;500;600;700;900&family=Playfair+Display:ital,wght@0,600;0,700;1,700&family=Poppins:wght@700&family=Roboto:wght@300;700&family=Signika:wght@300&family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     </head>
+    <!-- The navbar section for readmore pages -->
     <header id="navres" class="header">
         <a rel="noopener noreferrer" href="/" class="logo"><i></i>Fictionary</a>
         <nav class="navbar">
@@ -21,8 +18,6 @@
                 <li><a target="_blank" rel="noopener noreferrer" href="default.asp"><img src="" alt=""></a></li>
                 <li><a target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer"
                         href="/genre">Genre</a></li>
-                <!-- <li><a target="_blank" rel="noopener noreferrer" href="contact.asp">Blog</a></li> -->
-                <!-- <li><input type="text" name="" id="search" placeholder="search"></li> -->
                 <li>
                     <div class="group">
                         <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
@@ -41,6 +36,7 @@
             </ul>
         </nav>
     </header>
+    <!-- Readmore page dynamic content  -->
     <div class="read-more">
         <div class="Parent">
             <div class="child1">
@@ -63,9 +59,7 @@
                     </h3>
     
                 </div> 
-                <p class="last"><%= data.pages %>
-                    <br>
-                    <br>
+                <p class="last"><%= data.pages %><br><br>
                     First published in <%= data.published %>
                 </p>
     

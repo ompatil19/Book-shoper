@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login/SignUp</title>
     <link rel="stylesheet" href="/static/output.css">
+    <link rel="shortcut icon" href="static/images/favicon.jpg" type="image/x-icon">
 </head>
 <body>
+    <!-- Animation text heading -->
   <div class="animation">
     <div class="waviy">
         <span style="--i:1">F</span>
@@ -22,15 +24,13 @@
         <span style="--i:10">y</span>
     </div>
 </div>
+  <!-- Login section -->
     <div class="container">
-
     <div class="wrapper">
       <div class="title-text">
         <div class="title login">Login</div>
         <div class="title signup">Signup</div>
       </div>
-      
-
     <div class="form-container">
       <div class="slide-controls">
         <input type="radio" name="slider" id="login" checked>
@@ -39,8 +39,6 @@
         <label for="signup" class="slide text-signup">Signup</label>
         <div class="slide-tab"></div>
       </div>
-      
-
       <div class="form-inner">
         <form action="/loginAuth" method="post" class="login">
           <div class="field">
@@ -57,14 +55,8 @@
             <input class="btn-login" type="submit" value="Login">
           </div>
         </form>
-
-
+        <!-- SignupForm -->
         <form action="/signup" method="post" class="signup">
-          <!-- <div class="field">
-            <input id="username" type="text" maxlength="22" required>
-            <label>User Name</label>
-          </div>
-          <p id="alertuname">This name has already been used</p> -->
           <div class="field">
             <input id="email" type="email" maxlength="35" required name="logemail">
             <label id="lemail" >Email</label>
@@ -97,7 +89,6 @@
       </div>
     </div>
   </div>
-
 </div>
 
 <div id="modalContainer">
@@ -108,8 +99,7 @@
     </p>
     </div>
 </div>
-
-<!-- <img class="mooj" src="/static//images/SignupBackground.png"> -->
+<!-- script files -->
 <script src="/static/register.js"></script>
 </body>
 </html>
